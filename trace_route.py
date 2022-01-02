@@ -33,11 +33,11 @@ def trace_route(dest_name_or_address):
         attempts = 3
         curr_name = None
         curr_address = None
-        reached = False
-        while not reached and attempts > 0:
+        node_reached = False
+        while not node_reached and attempts > 0:
             try:
                 curr_address = receive_socket.recvfrom(512)[1][0]
-                reached = True
+                node_reached = True
 
                 try:
                     curr_name = socket.gethostbyaddr(curr_address)[0]
@@ -61,7 +61,7 @@ def trace_route(dest_name_or_address):
         time_to_live += 1
 
         if curr_address == dest_address or time_to_live > max_route_len:
-            break
+            exit(0)
 
 
 if __name__ == "__main__":
@@ -69,3 +69,4 @@ if __name__ == "__main__":
         trace_route(sys.argv[1])
     else:
         print("Only one argument is expected\nCheck it and try again")
+        exit(1)
