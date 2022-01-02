@@ -1,4 +1,4 @@
-name: Run test
+name: Test
 
 # Controls when the workflow will run
 on:
@@ -8,8 +8,8 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 
-  # This workflow contains a single job called "test"
-  test:
+  # This workflow contains a single job
+  tracert:
 
     # The type of runner that the job will run on
     runs-on: ${{ matrix.os }}
@@ -39,4 +39,4 @@ jobs:
       # Run tracert
       - name: Run tracert
         run: |
-          sudo python3 tracert.py lanit-tercom.ru
+          sudo python3 tracert.py yandex.ru
