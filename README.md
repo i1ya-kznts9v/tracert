@@ -2,8 +2,8 @@
 
 # Tracert utility on Python
 
-Tracert (traceroute) is a utility that allows you to trace the route of data to a remote destination in TCP/IP networks. With
-these commands, you can see the path of the data packet from your computer to the target server or site.
+Tracert (traceroute) is a utility that allows you to trace the route of data to a remote destination in TCP/IP networks.
+With these commands, you can see the path of the data packet from your computer to the target server or site.
 
 This is the reference implementation of tracert for Linux.
 
