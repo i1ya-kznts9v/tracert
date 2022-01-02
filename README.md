@@ -1,9 +1,9 @@
-# Traceroute utility (*tracert*)
+# Tracert utility on Python
 
-Traceroute is a utility that allows you to trace the route of data to a remote destination in TCP/IP networks. With
+Tracert (traceroute) is a utility that allows you to trace the route of data to a remote destination in TCP/IP networks. With
 these commands, you can see the path of the data packet from your computer to the target server or site.
 
-This is the reference implementation of *tracert* for Linux.
+This is the reference implementation of tracert for Linux.
 
 ## Requirement
 
@@ -11,22 +11,22 @@ This is the reference implementation of *tracert* for Linux.
 
 ## Usage
 
-To run utility from repository root
+To run utility from repository root use
 
 ```
-sudo python3 trace_route.py [destination_name_or_address]
+sudo python3 tracert.py [destination_name_or_address]
 ```
 
 ## Example
 
 ```
-sudo python3 trace_route.py lanit-tercom.ru
+sudo python3 tracert.py lanit-tercom.ru
 ```
 
 or equivalent
 
 ```
-sudo python3 trace_route.py 178.210.90.17
+sudo python3 tracert.py 178.210.90.17
 ```
 
 for example destination returned
