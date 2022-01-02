@@ -39,4 +39,4 @@ jobs:
       # Run tracert
       - name: Run tracert
         run: |
-          sudo python3 tracert.py yandex.ru
+          sudo python3 tracert.py 127.0.0.1
