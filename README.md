@@ -1,3 +1,5 @@
+[![Test](https://github.com/kznts9v-1lya/tracert/actions/workflows/test.yml/badge.svg)](https://github.com/kznts9v-1lya/tracert/actions/workflows/test.yml)
+
 # Tracert utility on Python
 
 Tracert (traceroute) is a utility that allows you to trace the route of data to a remote destination in TCP/IP networks. With
